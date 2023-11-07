@@ -2,6 +2,10 @@
 
 <head>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Teko:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>Autogenpass</title>
 </head>
 
@@ -9,13 +13,12 @@
     <script src="index.js"></script>
     <div class="box-container1">
         <h1>Autogenpass</h1>
-        <h2>Generate a random password</h2>
+        <h2>Generate a <span style="color:#14213d;"><u>random password</u></span></h2>
         <h4>never use an insecure password again</h4>
-        <button>Generate Password</button>
-        <div id="password-containers"></div>
-        <h3>sample</h3>
-        <h3>sample</h3>
-    </div>
+        <div id="password-container">
+            <button id="generate-password">Generate Password</button>
+            <h3 id="the-passwords">sample</h3>
+        </div>
 </body>
 
 </html>

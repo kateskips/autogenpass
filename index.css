@@ -1,3 +1,51 @@
 body {
     margin: 0;
+    font-family: agbalumo, teko;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#fca311, #14213d);
+    
 }
+
+.box-container1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    background-color: #e5e5e5;
+    margin: 150px;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 25px 50px;
+    width: 550px;
+    height: 420px
+  
+}
+
+#password-container{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#generate-password{
+    width: 100px;
+    padding: 10px 15px;
+    border: 5px solid black;
+    border-radius: 50px;;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 3px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h4 {
+    margin-top: 10px;;
+    font-size: 18px;
+}
+
+
