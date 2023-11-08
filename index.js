@@ -3,8 +3,7 @@ const characters =
         "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z",
         "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
         "~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", ",", "|", ":", ";", "<", ">", ".", "?", "/"];
-let length = 91;
-let password = ""
+
 
 let passwordBtn = document.getElementById("generate-password");
 let passwordShow = document.getElementById("the-password");
@@ -12,10 +11,17 @@ let passwordShow = document.getElementById("the-password");
 
 
 function createPassword() {
-    for(i = 0; i < characters.length; i++)
-    console.log(characters[i])
+    let password = ""
+    for (i = 0; i < 15; i++) {
+        let randomizer = Math.floor(Math.random() * characters.length)
+        //console.log(characters[i])
+        password += characters[randomizer]
     }
-   
+    return password
+    
+}
+console.log(createPassword())
+
 
 
 
