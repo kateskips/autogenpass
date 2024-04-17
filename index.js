@@ -6,8 +6,8 @@ const characters =
 
 
 let passwordBtn = document.getElementById("generate-password");
-let passwordShow = document.getElementById("the-password");
-
+let passwordStage = document.getElementById("stage")
+console.log(passwordStage)
 
 
 function createPassword() {
@@ -16,9 +16,9 @@ function createPassword() {
         let randomizer = Math.floor(Math.random() * characters.length)
         //console.log(characters[i])
         password += characters[randomizer]
+        passwordStage.textContent = password
     }
     return password
-    
 }
 console.log(createPassword())
 
